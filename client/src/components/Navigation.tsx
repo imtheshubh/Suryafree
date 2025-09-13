@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import logoImage from '@assets/WhatsApp Image 2025-08-19 at 1.33.41 AM_1757765236064.jpeg';
+import logoImage from '@assets/suryafree-logo.jpeg';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

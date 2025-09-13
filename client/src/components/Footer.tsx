@@ -1,5 +1,5 @@
 import { Separator } from '@/components/ui/separator';
-import logoImage from '@assets/WhatsApp Image 2025-08-19 at 1.33.41 AM_1757765236064.jpeg';
+import logoImage from '@assets/suryafree-logo.jpeg';
 
 export default function Footer() {
   const scrollToSection = (href: string) => {
