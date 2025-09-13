@@ -32,9 +32,8 @@ export default function AboutSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="text-about-title">
             About SuryaFree
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto" data-testid="text-about-description">
-            We are passionate about bringing clean, renewable energy to every home and business. 
-            With our commitment to sustainable energy solutions, we help you reduce costs while protecting the environment.
+          <p className="text-lg text-muted-foreground whitespace-nowrap overflow-x-auto mx-auto" data-testid="text-about-description">
+            We are passionate about bringing clean, renewable energy to every home and business. With our commitment to sustainable energy solutions, we help you reduce costs while protecting the environment.
           </p>
         </div>
 
