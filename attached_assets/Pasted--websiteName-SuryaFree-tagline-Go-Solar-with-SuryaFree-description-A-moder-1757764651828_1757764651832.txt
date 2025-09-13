@@ -1,0 +1,78 @@
+{
+  "websiteName": "SuryaFree",
+  "tagline": "Go Solar with SuryaFree",
+  "description": "A modern, clean, and fully responsive single-page website for a solar energy company, built entirely within one HTML file. It uses a utility-first styling approach to ensure a mobile-friendly design.",
+  "design": {
+    "framework": "Tailwind CSS",
+    "colorPalette": [
+      "white",
+      "green",
+      "yellow"
+    ],
+    "principles": [
+      "Modern and clean aesthetics",
+      "Fully responsive for all devices",
+      "Intuitive navigation"
+    ]
+  },
+  "sections": [
+    {
+      "name": "Navigation Header",
+      "purpose": "Provides site-wide navigation and brand identity.",
+      "features": [
+        "Sticky header",
+        "Company name 'SuryaFree'",
+        "Links to all sections (Home, About Us, Services, Gallery, Contact)",
+        "Hamburger menu for mobile"
+      ]
+    },
+    {
+      "name": "Hero Section",
+      "purpose": "The primary landing area to engage users immediately.",
+      "features": [
+        "Bold central headline",
+        "Compelling sub-heading",
+        "Prominent 'Get a Free Quote' call-to-action button"
+      ]
+    },
+    {
+      "name": "About Us",
+      "purpose": "Introduces the company's mission and values.",
+      "features": [
+        "Brief introduction",
+        "Commitment to sustainable energy"
+      ]
+    },
+    {
+      "name": "Services",
+      "purpose": "Showcases the various solar solutions offered.",
+      "features": [
+        "Card-based layout",
+        "Icons for each service",
+        "Descriptive paragraphs for each service (e.g., Solar Panels, Solar Water Heaters)"
+      ]
+    },
+    {
+      "name": "Gallery",
+      "purpose": "Builds trust and displays project work.",
+      "features": [
+        "Simple grid-based layout",
+        "Project images (placeholder)"
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "purpose": "Facilitates customer inquiries and provides contact information.",
+      "features": [
+        "Contact form",
+        "Company contact details (phone, email, address)"
+      ]
+    }
+  ],
+  "technicalFeatures": [
+    "Single-file HTML",
+    "Tailwind CSS for styling",
+    "Responsive design",
+    "Placeholder images for demonstration purposes"
+  ]
+}
