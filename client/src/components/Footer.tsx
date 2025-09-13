@@ -1,4 +1,5 @@
 import { Separator } from '@/components/ui/separator';
+import logoImage from '@assets/WhatsApp Image 2025-08-19 at 1.33.41 AM_1757765236064.jpeg';
 
 export default function Footer() {
   const scrollToSection = (href: string) => {
@@ -14,9 +15,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-primary" data-testid="text-footer-logo">
-              SuryaFree
-            </h3>
+            <div className="flex items-center space-x-2">
+              <img 
+                src={logoImage} 
+                alt="SuryaFree Logo" 
+                className="h-8 w-auto"
+                data-testid="img-footer-logo"
+              />
+              <h3 className="text-xl font-bold text-primary" data-testid="text-footer-logo">
+                SuryaFree
+              </h3>
+            </div>
             <p className="text-muted-foreground" data-testid="text-footer-description">
               Leading provider of sustainable solar energy solutions for homes and businesses.
             </p>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import logoImage from '@assets/WhatsApp Image 2025-08-19 at 1.33.41 AM_1757765236064.jpeg';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +27,13 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center space-x-3">
+            <img 
+              src={logoImage} 
+              alt="SuryaFree Logo" 
+              className="h-10 w-auto"
+              data-testid="img-logo"
+            />
             <h1 className="text-2xl font-bold text-primary" data-testid="text-logo">
               SuryaFree
             </h1>
