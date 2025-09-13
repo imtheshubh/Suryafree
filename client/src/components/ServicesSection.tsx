@@ -1,19 +1,18 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import solarPanelsImage from '@assets/generated_images/Solar_panels_product_shot_c70971f1.png';
-import solarHeaterImage from '@assets/generated_images/Solar_water_heater_system_ef682db3.png';
+import { Sun, Droplets } from 'lucide-react';
 
 export default function ServicesSection() {
   const services = [
     {
       title: 'Solar Panel Installation',
-      image: solarPanelsImage,
+      icon: Sun,
       description: 'High-efficiency solar panels designed to maximize energy production and reduce electricity bills. Our premium panels come with 25-year warranties.',
       features: ['25-year warranty', 'High efficiency rating', 'Professional installation', 'Monitoring system included']
     },
     {
       title: 'Solar Water Heaters',
-      image: solarHeaterImage,
+      icon: Droplets,
       description: 'Eco-friendly solar water heating systems that provide hot water year-round while reducing your energy consumption and utility costs.',
       features: ['Year-round hot water', 'Energy efficient', 'Low maintenance', 'Durable construction']
     }
@@ -41,12 +40,8 @@ export default function ServicesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="overflow-hidden hover-elevate" data-testid={`card-service-${index}`}>
-              <div className="aspect-video overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover"
-                />
+              <div className="aspect-video bg-gradient-to-br from-primary/10 to-chart-2/10 flex items-center justify-center">
+                <service.icon className="w-24 h-24 text-primary" />
               </div>
               <CardHeader>
                 <CardTitle className="text-2xl" data-testid={`text-service-title-${index}`}>

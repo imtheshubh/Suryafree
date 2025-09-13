@@ -1,29 +1,30 @@
-import residentialImage from '@assets/generated_images/Residential_solar_installation_330ba459.png';
-import commercialImage from '@assets/generated_images/Commercial_solar_installation_f5645f0a.png';
-import solarFarmImage from '@assets/generated_images/Solar_farm_landscape_1a7444eb.png';
-import solarPanelsImage from '@assets/generated_images/Solar_panels_product_shot_c70971f1.png';
+import { Home, Building, Zap, Sun } from 'lucide-react';
 
 export default function GallerySection() {
   const projects = [
     {
       title: 'Residential Installation',
-      image: residentialImage,
-      description: 'Modern home solar panel system with 20kW capacity'
+      icon: Home,
+      description: 'Modern home solar panel system with 20kW capacity',
+      color: 'from-blue-500/20 to-blue-600/20'
     },
     {
       title: 'Commercial Project',
-      image: commercialImage,
-      description: 'Large-scale commercial installation for office building'
+      icon: Building,
+      description: 'Large-scale commercial installation for office building',
+      color: 'from-green-500/20 to-green-600/20'
     },
     {
       title: 'Solar Farm',
-      image: solarFarmImage,
-      description: 'Utility-scale solar farm generating clean energy'
+      icon: Zap,
+      description: 'Utility-scale solar farm generating clean energy',
+      color: 'from-yellow-500/20 to-yellow-600/20'
     },
     {
       title: 'Premium Panels',
-      image: solarPanelsImage,
-      description: 'High-efficiency solar panels with advanced technology'
+      icon: Sun,
+      description: 'High-efficiency solar panels with advanced technology',
+      color: 'from-orange-500/20 to-orange-600/20'
     }
   ];
 
@@ -46,12 +47,8 @@ export default function GallerySection() {
               className="group relative overflow-hidden rounded-lg hover-elevate cursor-pointer"
               data-testid={`card-project-${index}`}
             >
-              <div className="aspect-video overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+              <div className={`aspect-video bg-gradient-to-br ${project.color} flex items-center justify-center transition-transform duration-300 group-hover:scale-105`}>
+                <project.icon className="w-16 h-16 text-white" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">

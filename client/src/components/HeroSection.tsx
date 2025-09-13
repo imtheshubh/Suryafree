@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button';
-import heroImage from '@assets/generated_images/Modern_home_with_solar_panels_eece5ef6.png';
 
 export default function HeroSection() {
   const scrollToContact = () => {
@@ -11,14 +10,9 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Modern home with solar panels"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40"></div>
+      {/* Background with Gradient */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary/20 to-chart-2/20">
+        <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
       {/* Content */}
