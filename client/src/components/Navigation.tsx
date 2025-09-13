@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import logoImage from '@assets/suryafree-logo.jpeg';
+import logoImage from '@assets/generated_images/SuryaFree_transparent_logo_de73d076.png';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

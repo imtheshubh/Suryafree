@@ -1,5 +1,5 @@
 import { Separator } from '@/components/ui/separator';
-import logoImage from '@assets/suryafree-logo.jpeg';
+import logoImage from '@assets/generated_images/SuryaFree_transparent_logo_de73d076.png';
 
 export default function Footer() {
   const scrollToSection = (href: string) => {
