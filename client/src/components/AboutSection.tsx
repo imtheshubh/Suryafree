@@ -32,9 +32,27 @@ export default function AboutSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="text-about-title">
             About SuryaFree
           </h2>
-          <p className="text-lg text-muted-foreground whitespace-nowrap overflow-x-auto mx-auto" data-testid="text-about-description">
-            We are passionate about bringing clean, renewable energy to every home and business. With our commitment to sustainable energy solutions, we help you reduce costs while protecting the environment.
-          </p>
+          <div className="max-w-4xl mx-auto space-y-4">
+            <p className="text-lg text-muted-foreground" data-testid="text-about-description">
+              We are passionate about bringing clean, renewable energy to every home and business. 
+              Our commitment goes beyond just providing solar solutions – we're dedicated to creating 
+              a sustainable future for generations to come.
+            </p>
+            <p className="text-base text-muted-foreground" data-testid="text-about-environment">
+              Traditional fossil fuel-based electricity generation is one of the largest contributors to 
+              global carbon emissions, air pollution, and climate change. Coal and natural gas power plants 
+              release harmful greenhouse gases, toxic chemicals, and particulate matter that damage our 
+              environment and public health. By choosing solar energy, you're making a powerful statement 
+              against these environmental threats.
+            </p>
+            <p className="text-base text-muted-foreground" data-testid="text-about-benefits">
+              Solar energy produces zero emissions during operation, helping to reduce global warming and 
+              combat climate change. Every solar panel installed saves thousands of pounds of CO2 from 
+              entering our atmosphere each year. When you switch to solar, you're not just reducing your 
+              electricity bills – you're actively participating in the fight against climate change and 
+              helping preserve our planet for future generations.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
