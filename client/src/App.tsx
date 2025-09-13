@@ -5,12 +5,14 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import HomeSimple from "@/pages/HomeSimple";
+import Admin from "@/pages/Admin";
 import NotFound from "@/pages/not-found";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/admin" component={Admin} />
       <Route path="/test" component={HomeSimple} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />

@@ -16,15 +16,41 @@ export default function ContactSection() {
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Implement actual form submission
-    console.log('Form submitted:', formData);
-    toast({
-      title: "Quote Request Sent!",
-      description: "We'll contact you within 24 hours to discuss your solar needs.",
-    });
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    
+    try {
+      const response = await fetch('/api/quote-requests', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast({
+          title: "Quote Request Sent!",
+          description: "We'll contact you within 24 hours to discuss your solar needs.",
+        });
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      } else {
+        toast({
+          title: "Error",
+          description: result.error || "Failed to send quote request. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send quote request. Please check your connection and try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
