@@ -1,20 +1,26 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Sun, Droplets } from 'lucide-react';
+import { Sun, Droplets, Brush } from 'lucide-react';
 
 export default function ServicesSection() {
   const services = [
     {
       title: 'Solar Panel Installation',
       icon: Sun,
-      description: 'High-efficiency solar panels designed to maximize energy production and reduce electricity bills. Our premium panels come with 25-year warranties.',
-      features: ['25-year warranty', 'High efficiency rating', 'Professional installation', 'Monitoring system included']
+      description: 'Complete solar panel installation services with professional design, installation, and commissioning for residential and commercial properties.',
+      features: ['Site assessment', 'Custom design', 'Professional installation', 'Grid connection assistance']
     },
     {
       title: 'Solar Water Heaters',
       icon: Droplets,
       description: 'Eco-friendly solar water heating systems that provide hot water year-round while reducing your energy consumption and utility costs.',
       features: ['Year-round hot water', 'Energy efficient', 'Low maintenance', 'Durable construction']
+    },
+    {
+      title: 'Solar Cleaning & Maintenance',
+      icon: Brush,
+      description: 'Regular cleaning and maintenance services to ensure optimal performance and extend the lifespan of your solar installation.',
+      features: ['Regular cleaning schedule', 'Performance monitoring', 'Preventive maintenance', 'Quick repairs']
     }
   ];
 
@@ -37,7 +43,7 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="overflow-hidden hover-elevate" data-testid={`card-service-${index}`}>
               <div className="aspect-video bg-gradient-to-br from-primary/10 to-chart-2/10 flex items-center justify-center">

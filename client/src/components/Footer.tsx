@@ -35,7 +35,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold" data-testid="text-footer-links-title">Quick Links</h4>
             <nav className="flex flex-col space-y-2">
-              {['Home', 'About Us', 'Services', 'Gallery', 'Contact'].map((item, index) => (
+              {['Home', 'About Us', 'Services', 'Products', 'Schemes', 'Contact'].map((item, index) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(`#${item.toLowerCase().replace(' ', '').replace('aboutus', 'about')}`)}
@@ -52,7 +52,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold" data-testid="text-footer-services-title">Services</h4>
             <nav className="flex flex-col space-y-2">
-              {['Solar Panel Installation', 'Solar Water Heaters', 'Energy Consultation', 'Maintenance & Support'].map((service, index) => (
+              {['Solar Panel Installation', 'Solar Water Heaters', 'Solar Cleaning', 'Government Schemes'].map((service, index) => (
                 <span
                   key={service}
                   className="text-muted-foreground"
