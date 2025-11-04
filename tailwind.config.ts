@@ -12,9 +12,12 @@ export default {
       },
       colors: {
         // Flat / base colors (regular buttons)
-        background: "hsl(var(--background) / <alpha-value>)",
-        foreground: "hsl(var(--foreground) / <alpha-value>)",
-        border: "hsl(var(--border) / <alpha-value>)",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        border: {
+          DEFAULT: "hsl(var(--border))",
+          border: "hsl(var(--border))"
+        },
         input: "hsl(var(--input) / <alpha-value>)",
         card: {
           DEFAULT: "hsl(var(--card) / <alpha-value>)",
